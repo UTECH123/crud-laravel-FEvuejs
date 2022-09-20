@@ -39,7 +39,7 @@ class ProdukController extends Controller
      */
     public function show(Produk $produk)
     {
-        //
+        return new ProdukResource($produk);
     }
 
     /**
@@ -51,7 +51,9 @@ class ProdukController extends Controller
      */
     public function update(Request $request, Produk $produk)
     {
-        //
+        $produk->update($request->validated());
+
+        return new ProdukResource($produk);
     }
 
     /**
