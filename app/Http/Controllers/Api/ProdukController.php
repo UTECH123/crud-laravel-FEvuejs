@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ProdukRequest;
+use App\Http\Resources\ProdukResource;
 use App\Models\Produk;
-use Illuminate\Http\Request;
 
 class ProdukController extends Controller
 {
