@@ -1,24 +1,24 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import CompaniesIndex from '../components/companies/CompaniesIndex'
-import CompaniesCreate from '../components/companies/CompaniesCreate'
-import CompaniesEdit from '../components/companies/CompaniesEdit'
+import ProduksIndex from '../components/produks/ProduksIndex'
+import ProduksCreate from '../components/produks/ProduksCreate'
+import ProduksEdit from '../components/produks/ProduksEdit'
 
 const routes = [
     {
         path: '/dashboard',
-        name: 'companies.index',
-        component: CompaniesIndex
+        name: 'produks.index',
+        component: ProduksIndex
     },
     {
-        path: '/companies/create',
-        name: 'companies.create',
-        component: CompaniesCreate
+        path: '/produks/create',
+        name: 'produks.create',
+        component: ProduksCreate
     },
     {
-        path: '/companies/:id/edit',
-        name: 'companies.edit',
-        component: CompaniesEdit,
+        path: '/produks/:id/edit',
+        name: 'produks.edit',
+        component: ProduksEdit,
         props: true
     }
 ]

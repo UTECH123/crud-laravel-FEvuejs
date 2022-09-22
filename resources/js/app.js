@@ -4,10 +4,10 @@ require('alpinejs');
 
 import { createApp } from "vue";
 import router from './router'
-import CompaniesIndex from './components/companies/CompaniesIndex'
+import ProduksIndex from './components/produks/ProduksIndex'
 
 createApp({
     components: {
-        CompaniesIndex
+        ProduksIndex
     }
 }).use(router).mount('#app')
