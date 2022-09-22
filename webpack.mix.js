@@ -16,3 +16,7 @@ mix.js('resources/js/app.js', 'public/js').vue().postCss('resources/css/app.css'
     require('tailwindcss'),
     require('autoprefixer'),
 ]);
+mix.webpackConfig({
+    stats: {
+        children: true,
+    },});
